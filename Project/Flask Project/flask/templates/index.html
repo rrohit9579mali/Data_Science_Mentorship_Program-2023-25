@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Processing App</title>
+</head>
+<body>
+    <h1>Signal Processing Application</h1>
+    <form action="/generate_signal" method="POST">
+        <label for="signal_type">Signal Type:</label>
+        <select name="signal_type" id="signal_type">
+            <option value="sine">Sine Wave</option>
+            <option value="square">Square Wave</option>
+        </select><br>
+
+        <label for="frequency">Frequency (Hz):</label>
+        <input type="number" name="frequency" id="frequency" required><br>
+
+        <label for="amplitude">Amplitude:</label>
+        <input type="number" name="amplitude" id="amplitude" required><br>
+
+        <label for="phase">Phase (Radians):</label>
+        <input type="number" name="phase" id="phase" required><br>
+
+        <button type="submit">Generate Signal</button>
+    </form>
+
+    {% if img_data %}
+        <h2>Generated Signal & Fourier Transform</h2>
+        <img src="data:image/png;base64,{{ img_data }}" alt="Signal Plot">
+    {% endif %}
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>
