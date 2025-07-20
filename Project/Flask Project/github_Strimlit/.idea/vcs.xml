@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/new_startup_dashboard" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/streamlit-basics" vcs="Git" />
   </component>
 </project>
